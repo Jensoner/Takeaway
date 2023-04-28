@@ -1,0 +1,230 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+/*容器*/
+.container {
+    margin: 10px auto 0px;
+    width: 95%;
+}
+
+/*显示省略号*/
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*字体大小*/
+html {
+    /*搜索框的高度*/
+    --normalHeight: 1.8rem;
+    /*小图片高度*/
+    --minImgHeight: 5rem;
+    /*离底部的距离*/
+    --distanceHeight:5.5rem;
+    /* 正常字体 */
+    --normal: 0.5rem;
+    /* 图片宽度 */
+    --imgSize: 6.05rem;
+    /* 略大的字体 */
+    --side: 0.85rem;
+    /* 大号的fontsize字号 */
+    --bigSize: 1.1rem;
+    /*margin距离上方的高度*/
+    --autoHeight: 0;
+    /*项目标题字体*/
+    --titleSize: 1.5rem;
+    /*列表图片宽度*/
+    --listWidth:6rem;
+
+}
+
+/* 颜色 */
+:root {
+    /*主背景色*/
+    --normalBgColor: rgb(247, 243, 243);
+    /*card卡片框的背景颜色*/
+    --cardBgColor: rgb(255, 255, 255);
+    /*灰色字体*/
+    --cardFontColor: rgb(144, 142, 142);
+    /*主绿色调*/
+    --homeBgColor: rgb(48, 147, 48);
+    /*今日必抢red*/
+    --redSize: rgb(247, 54, 54);
+    /*浅红色*/
+    --lightBgRed: #f6d6d6;
+    /*主题色(蓝色)*/
+    --aquaBgColor:aqua;
+}
+
+.title {
+    font-size: var(--titleSize);
+    color: white;
+    font-family: "Regular";
+}
+
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+    font-family: "Regular";
+    font-weight: 400;
+    src: url("//at.alicdn.com/wf/webfont/V03491DcI7D0/Au88yVyNYWtJ.woff2") format("woff2"),
+        url("//at.alicdn.com/wf/webfont/V03491DcI7D0/sgihqARef83w.woff") format("woff");
+    font-display: swap;
+}
+
+/*将超出部分使用省略号代替*/
+.hidden {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+    /* Chrome Safari去除滚动条 */
+}
