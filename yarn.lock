@@ -977,6 +977,109 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     "to-fast-properties" "^2.0.0"
 
+"@better-scroll/core@^2.5.1":
+  "integrity" "sha512-koKOuYA55dQ04FJRIVUpMGDr1hbCfWmfX0MGp1hKagkQSWSRpwblqACiwtggVauoj9aaJRJZ9hDsTM4weaavlg=="
+  "resolved" "https://registry.npmmirror.com/@better-scroll/core/-/core-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "@better-scroll/shared-utils" "^2.5.1"
+
+"@better-scroll/indicators@^2.5.1":
+  "integrity" "sha512-Hk+Y00pR6fTsu6C9HGg1yYZtsu1gAcTgcs4C9aM5h6fQANX/T2YIYrOSjZmdL+js2PTcXJWZS8VM4Xjoi1PbfQ=="
+  "resolved" "https://registry.npmmirror.com/@better-scroll/indicators/-/indicators-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/infinity@^2.5.1":
+  "integrity" "sha512-GKHrrasIh0KlGzhASHDo5hEEBJcDFpP4XaZGPH9Ey8+QBH6/O1ykAXS2ixkVAOTkBrv+KgFXoCUr4oN1xWeM+g=="
+  "resolved" "https://registry.npmmirror.com/@better-scroll/infinity/-/infinity-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/mouse-wheel@^2.5.1":
+  "integrity" "sha512-DGnrirRMY6zMM7xwgx09D/cA9A//3J1/uDkq8iBVEyE5p0sEr/keQpjEfFHGkBRa505BnbBwdbN6f5lugEDSPw=="
+  "resolved" "https://registry.npmmirror.com/@better-scroll/mouse-wheel/-/mouse-wheel-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/movable@^2.5.1":
+  "integrity" "sha512-8bLPRY15bbK4K5+tjrtdaKsFFKmJx72wRdg+xz3xQGFcTD940HFkJiORSOcz8Ufue7eOJfcmreQJBw6XY+TqTw=="
+  "resolved" "https://registry.npmmirror.com/@better-scroll/movable/-/movable-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/nested-scroll@^2.5.1":
+  "integrity" "sha512-3cRsARxf9tq1VWBq7YAaET0xGAmgY1ERMmnXDo2gHFrmsJoNOionlpAeHdZvKQp2jG7JrzJ1O27nGCXf40gnkw=="
+  "resolved" "https://registry.npmmirror.com/@better-scroll/nested-scroll/-/nested-scroll-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/observe-dom@^2.5.1":
+  "integrity" "sha512-TCMGFLRfpXBPIwtUV/efliUmfmrhSNI7NXdSyjdWjsLOS7dh3eFkmcom5ERVWMaXVELSmujGXLqobT+dT0C/jg=="
+  "resolved" "https://registry.npmmirror.com/@better-scroll/observe-dom/-/observe-dom-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/observe-image@^2.5.1":
+  "integrity" "sha512-0Lhfj83o8EESwOxr8bfStCzNOokTm3KB7JeyMS8u/xl+3tyTuls9889cyAukYk4Yly1cS49pCGfj2P8YOiwtUg=="
+  "resolved" "https://registry.npmmirror.com/@better-scroll/observe-image/-/observe-image-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/pull-down@^2.5.1":
+  "integrity" "sha512-Y6XcGu2NlevPg3k9VBRRFvpmfoTA+rO96JGdog2qKHclIPNXnsVwsIHtZfAm9weE/f9UuC4BnB+VUFRlucfupg=="
+  "resolved" "https://registry.npmmirror.com/@better-scroll/pull-down/-/pull-down-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/pull-up@^2.5.1":
+  "integrity" "sha512-1hu3xSMxdB8T391KffpNZ7g93lMwZEHjfb1F1Y4KvIkciDt8nXqkGpqrZF+YwR+EJTgYcWqUO8kgmI6XXu7Pkg=="
+  "resolved" "https://registry.npmmirror.com/@better-scroll/pull-up/-/pull-up-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/scroll-bar@^2.5.1":
+  "integrity" "sha512-i6r60pWG/ztkFK2j5Gj54I0LJb2jGh5TWJNQBoW0gUkp28B+0JvBFTwZn9tF7beZCBorKR7Hvvu4O9A1TJy94Q=="
+  "resolved" "https://registry.npmmirror.com/@better-scroll/scroll-bar/-/scroll-bar-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/shared-utils@^2.5.1":
+  "integrity" "sha512-AplkfSjXVYP9LZiD6JsKgmgQJ/mG4uuLmBuwLz8W5OsYc7AYTfN8kw6GqZ5OwCGoXkVhBGyd8NeC4xwYItp0aw=="
+  "resolved" "https://registry.npmmirror.com/@better-scroll/shared-utils/-/shared-utils-2.5.1.tgz"
+  "version" "2.5.1"
+
+"@better-scroll/slide@^2.5.1":
+  "integrity" "sha512-aDOrfsmjAcz6DXN7mDX3tPieAn195R43Yn9e3waI19TIEok/mQlI1a/kb5quqWOoxkiaZQ8xe3vx5ZTj9C+F6Q=="
+  "resolved" "https://registry.npmmirror.com/@better-scroll/slide/-/slide-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/wheel@^2.5.1":
+  "integrity" "sha512-fYLcEvkh88Z/2L+P5/+SGMunuc+HzAjGOiORIa/x21qb/knO2RFH4A/V1Rt3OIW4QluWzuFnU6jJRPlsQVZ4fg=="
+  "resolved" "https://registry.npmmirror.com/@better-scroll/wheel/-/wheel-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
+"@better-scroll/zoom@^2.5.1":
+  "integrity" "sha512-aGvFY5ooeZWS4RcxQLD+pGLpQHQxpPy0sMZV3yadcd2QK53PK9gS4Dp+BYfRv8lZ4/P2LoNEhr6Wq1DN6+uPlA=="
+  "resolved" "https://registry.npmmirror.com/@better-scroll/zoom/-/zoom-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+
 "@discoveryjs/json-ext@0.5.7":
   "integrity" "sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw=="
   "resolved" "https://registry.npmmirror.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz"
@@ -2033,6 +2136,26 @@
   dependencies:
     "tweetnacl" "^0.14.3"
 
+"better-scroll@^2.5.1":
+  "integrity" "sha512-OiF3cQroRfTzf+CRQH2z1G52ZAlNHINI6lCAvDmyFu0o0nRuTaV9F+fmBGIU2BL5p5IplUQ4E7sYa1TLfZarzQ=="
+  "resolved" "https://registry.npmmirror.com/better-scroll/-/better-scroll-2.5.1.tgz"
+  "version" "2.5.1"
+  dependencies:
+    "@better-scroll/core" "^2.5.1"
+    "@better-scroll/indicators" "^2.5.1"
+    "@better-scroll/infinity" "^2.5.1"
+    "@better-scroll/mouse-wheel" "^2.5.1"
+    "@better-scroll/movable" "^2.5.1"
+    "@better-scroll/nested-scroll" "^2.5.1"
+    "@better-scroll/observe-dom" "^2.5.1"
+    "@better-scroll/observe-image" "^2.5.1"
+    "@better-scroll/pull-down" "^2.5.1"
+    "@better-scroll/pull-up" "^2.5.1"
+    "@better-scroll/scroll-bar" "^2.5.1"
+    "@better-scroll/slide" "^2.5.1"
+    "@better-scroll/wheel" "^2.5.1"
+    "@better-scroll/zoom" "^2.5.1"
+
 "big.js@^5.2.2":
   "integrity" "sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ=="
   "resolved" "https://registry.npmmirror.com/big.js/-/big.js-5.2.2.tgz"
@@ -2526,6 +2649,11 @@
     "path-key" "^3.1.0"
     "shebang-command" "^2.0.0"
     "which" "^2.0.1"
+
+"crypto-js@^4.1.1":
+  "integrity" "sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw=="
+  "resolved" "https://registry.npmmirror.com/crypto-js/-/crypto-js-4.1.1.tgz"
+  "version" "4.1.1"
 
 "css-declaration-sorter@^6.3.1":
   "integrity" "sha512-jDfsatwWMWN0MODAFuHszfjphEXfNw9JUAhmY4pLu3TyTU+ohUpsbVtbU+1MZn4a47D9kqh03i4eyOm+74+zew=="
@@ -6134,6 +6262,11 @@
   "integrity" "sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg=="
   "resolved" "https://registry.npmmirror.com/uuid/-/uuid-8.3.2.tgz"
   "version" "8.3.2"
+
+"uuid@^9.0.0":
+  "integrity" "sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg=="
+  "resolved" "https://registry.npmmirror.com/uuid/-/uuid-9.0.0.tgz"
+  "version" "9.0.0"
 
 "v8-compile-cache@^2.0.3":
   "integrity" "sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA=="

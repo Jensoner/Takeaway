@@ -1,12 +1,13 @@
 import a from 'axios'
 
 const axios = a.create({
-  baseURL: 'http://127.0.0.1:300',
-  timeout: 5000,
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  
+    //   baseURL: 'http://127.0.0.1:300',
+    baseURL: 'https://elm.cangdu.org/',
+    timeout: 5000,
+    headers: {
+        'Content-Type': 'application/json'
+    },
+
 })
 
 //#region 

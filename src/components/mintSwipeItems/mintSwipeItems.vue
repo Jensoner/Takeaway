@@ -2,7 +2,11 @@
   <!-- 列表分类 -->
   <div class="mint-swipe-items-wrap">
     <ul class="mint-swipe-item">
-      <li v-for="item in resize" :key="item.id">
+      <li
+        v-for="item in resize"
+        :key="item.id"
+        @click="$router.push({ name: 'Mark', params: { title: item.title } })"
+      >
         <img :src="item.iconUrl" :alt="item.title" />
         <p>{{ item.title }}</p>
       </li>
@@ -18,6 +22,9 @@ export default {
       type: [],
       default: [],
     },
+  },
+  beforeMount() {
+    // console.log(this.resize);
   },
 };
 </script>

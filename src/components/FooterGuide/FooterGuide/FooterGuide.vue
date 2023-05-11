@@ -29,7 +29,7 @@ export default {
           id: 2,
           name: "全能超市",
           iconFont: "xueshengchaoshixiaofei",
-          link: "/Search",
+          link: "/Supermarket",
         },
         {
           id: 3,

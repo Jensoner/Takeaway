@@ -8,6 +8,7 @@ const traverseFolder = require('../utils/traverseFolder');
 const visit = require('../file_address/index');
 
 
+
 function bannerUrl(id) {
     console.log(readdir(`/public/shopList/merchant${id}/banner/`, 'png'));
     return visit.ptable + `merchant${id}/banner/` + readdir(`/public/shopList/merchant${id}/banner/`, 'png')[0]
@@ -207,7 +208,7 @@ exports.order = (req, res) => {
         id: uuidv4(),
         title: '舌尖上的中国',
         name: '',
-        bannerUrl:'O1CN018s3S9U1uS54nlSdlq_!!2215475886035-2-koubei.png_100x100.png',
+        bannerUrl: 'O1CN018s3S9U1uS54nlSdlq_!!2215475886035-2-koubei.png_100x100.png',
         imgUrl: ['/shop1/Snipaste_2023-04-27_16-14-15.jpg', '/shop1/Snipaste_2023-04-27_16-14-48.jpg', '/shop1/Snipaste_2023-04-27_16-14-56.jpg'],
         price: 8.7,
         num: 3
@@ -215,7 +216,7 @@ exports.order = (req, res) => {
         id: uuidv4(),
         title: "蜜雪冰城(中坝)",
         name: '',
-        bannerUrl:'O1CN01RYQNPz1SZaKgHmuOA_!!2208374492261-0-koubei.jpg_100x100.jpg',
+        bannerUrl: 'O1CN01RYQNPz1SZaKgHmuOA_!!2208374492261-0-koubei.jpg_100x100.jpg',
         imgUrl: ['/shop2/Snipaste_2023-04-27_16-17-28.jpg', '/shop2/Snipaste_2023-04-27_16-17-49.jpg', '/shop2/Snipaste_2023-04-27_16-17-56.jpg'],
         price: 16.9,
         num: 3
@@ -223,7 +224,7 @@ exports.order = (req, res) => {
         id: uuidv4(),
         title: "理柏颜营养健康旗舰店(长春店)",
         name: "褪黑素",
-        bannerUrl:'O1CN01xp2QGT1a355PE94XN_!!2214259033273-0-koubei.jpg_100x100.jpg',
+        bannerUrl: 'O1CN01xp2QGT1a355PE94XN_!!2214259033273-0-koubei.jpg_100x100.jpg',
         imgUrl: ['/shop3/Snipaste_2023-04-27_16-19-11.jpg'],
         price: 9.9,
         num: 1
@@ -231,7 +232,7 @@ exports.order = (req, res) => {
         id: uuidv4(),
         title: "一点点(石人南路店)",
         name: '',
-        bannerUrl:'O1CN01JYWzfq2GiUoyTXkDZ_!!2206679119049-0-koubei.jpg_100x100.jpg',
+        bannerUrl: 'O1CN01JYWzfq2GiUoyTXkDZ_!!2206679119049-0-koubei.jpg_100x100.jpg',
         imgUrl: ['/shop4/Snipaste_2023-04-27_16-22-03.jpg', '/shop4/Snipaste_2023-04-27_16-22-14.jpg'],
         price: 24.9,
         num: 3
@@ -239,17 +240,25 @@ exports.order = (req, res) => {
         id: uuidv4(),
         title: "叫了只炸鸡(中坝)",
         name: "第二份半价脆鸡骨套餐",
-        bannerUrl:'O1CN0107bS0Z1CqxIjrR01C_!!2208334220133-0-koubei.jpg_100x100.jpg',
+        bannerUrl: 'O1CN0107bS0Z1CqxIjrR01C_!!2208334220133-0-koubei.jpg_100x100.jpg',
         imgUrl: ['/shop5/Snipaste_2023-04-27_16-23-28.jpg'],
         price: 28,
         num: 1
     }]
     // 为所有图片添加地址前缀
     for (let index = 0; index < data.length; index++) {
-        data[index].bannerUrl = visit.order + `/shop${index+1}/banner/${data[index].bannerUrl}` 
+        data[index].bannerUrl = visit.order + `/shop${index + 1}/banner/${data[index].bannerUrl}`
         for (let key = 0; key < data[index].imgUrl.length; key++) {
             data[index].imgUrl[key] = visit.order + data[index].imgUrl[key]
         }
     }
     res.send(data)
+}
+exports.goods = (req, res) => {
+    let aside = [];
+    for (let index = 0; index < 4; index++) {
+        aside.push(data(index + 1))
+    }
+    // console.log(aside);
+    res.send(aside)
 }

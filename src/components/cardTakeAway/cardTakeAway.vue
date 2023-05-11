@@ -5,12 +5,12 @@
         <div class="card-take-item" v-for="item in recom" :key="item.id">
           <div class="card-take-item-img">
             <div>特价限6份</div>
-            <img :src="item.imgUrl.banner" />
+            <img :src="item.image_path" />
           </div>
           <div class="card-take-item-title">
-            <div class="card-title hidden">{{item.title}}</div>
+            <div class="card-title hidden">{{item.name}}</div>
             <div class="bottom">
-              <div class="price">￥<span>{{item.price}}</span></div>
+              <div class="price">￥<span>{{item.float_minimum_order_amount}}</span></div>
               <div class="add">+</div>
             </div>
           </div>

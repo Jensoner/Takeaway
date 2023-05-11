@@ -1,16 +1,19 @@
 <template>
   <div id="app">
+    <!-- <swiper/> -->
     <router-view></router-view>
     <div style="height: 3.5rem"></div>
-    <FooterGuide></FooterGuide>
+    <!-- <FooterGuide></FooterGuide> -->
   </div>
 </template>
 
 <script>
-import FooterGuide from './components/FooterGuide/FooterGuide/FooterGuide.vue';
+// import Swiper from './components/Swiper/Swiper.vue';
+// import FooterGuide from './components/FooterGuide/FooterGuide/FooterGuide.vue';
 export default{
   components:{
-    FooterGuide
+    // FooterGuide
+    // Swiper
   }
 }
 </script>

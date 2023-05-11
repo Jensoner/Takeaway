@@ -9,9 +9,7 @@
           </div>
           <div class="box-right-iphone">
             <div>
-              <p>177</p>
-              <p>****</p>
-              <p>8207</p>
+              <p>{{ iphone }}</p>
             </div>
           </div>
         </div>
@@ -52,18 +50,38 @@
             <span class="iconfont icon-shouhou"></span>
             <p>售后服务</p>
           </div>
-          </div>
         </div>
       </div>
     </div>
+    <FooterGuide />
   </div>
 </template>
 <script>
-export default {};
+import { decryption } from "@/utils/crypto.js";
+import FooterGuide from "@/components/FooterGuide/FooterGuide/FooterGuide.vue";
+export default {
+  data() {
+    return {
+      iphone: "",
+    };
+  },
+  beforeMount() {
+    let phoneNumber = decryption(localStorage.getItem("iphone")).username;
+    const head = phoneNumber.slice(0, 3);
+    const tail = phoneNumber.slice(-4);
+    const middle = "*".repeat(4);
+    phoneNumber = `${head}${middle}${tail}`;
+    this.iphone = phoneNumber;
+  },
+  components: {
+    FooterGuide,
+  },
+};
 </script>
 <style scoped lang="less">
 .Profile {
   width: 100%;
+  height: 100vh;
   background-color: var(--normalBgColor);
   .Profile-box {
     width: 95%;
@@ -135,7 +153,7 @@ export default {};
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         .more-item {
-          p{
+          p {
             padding-top: 0.3rem;
             text-align: center;
           }

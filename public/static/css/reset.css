@@ -194,7 +194,7 @@ html {
     /*浅红色*/
     --lightBgRed: #f6d6d6;
     /*主题色(蓝色)*/
-    --aquaBgColor:aqua;
+    --aquaBgColor:var(--van-address-list-radio-color);
 }
 
 .title {

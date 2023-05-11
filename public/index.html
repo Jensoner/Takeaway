@@ -15,38 +15,48 @@ ser-scalable=no"
 
     <link
       rel="stylesheet"
-      href="//at.alicdn.com/t/c/font_4028107_dgga6fz8r4b.css"
+      href="//at.alicdn.com/t/c/font_4028107_vyfamrjhsks.css"
     />
     <!-- 引入Vant样式文件 -->
-    <link rel="stylesheet" href="//unpkg.com/vant/lib/index.css">
-<link rel="stylesheet" href="//unpkg.com/vant/lib/icon/local.css">
+    <link rel="stylesheet" href="//unpkg.com/vant/lib/index.css" />
+    <link rel="stylesheet" href="//unpkg.com/vant/lib/icon/local.css" />
 
     <!--引入reset重置css样式文件-->
     <link rel="stylesheet" href="./static/css/reset.css" />
   </head>
   <body>
-
     <!--解决点击延时0.3s问题-->
     <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
     <script>
-            if ("addEventListener" in document) {
-              document.addEventListener(
-                "DOMContentLoaded",
-                function () {
-                  FastClick.attach(document.body);
-                },
-                false
-              );
-            }
-            if (!window.Promise) {
-              document.writeln(
-                '<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' +
-                  ">" +
-                  "<" +
-                  "/" +
-                  "script>"
-              );
-            }
+      window.addEventListener(
+        "touchstart",
+        function (event) {
+          // 阻止事件默认行为
+          event.preventDefault();
+        },
+        { passive: false }
+      );
+
+
+      
+      if ("addEventListener" in document) {
+        document.addEventListener(
+          "DOMContentLoaded",
+          function () {
+            FastClick.attach(document.body);
+          },
+          false
+        );
+      }
+      if (!window.Promise) {
+        document.writeln(
+          '<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' +
+            ">" +
+            "<" +
+            "/" +
+            "script>"
+        );
+      }
     </script>
     <noscript>
       <strong

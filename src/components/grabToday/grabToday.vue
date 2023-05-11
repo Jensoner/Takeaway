@@ -10,16 +10,16 @@
     <div class="grab-list">
       <div class="grab-list-item" v-for="item in ptable" :key="item.id">
         <div class="grab-list-item-img">
-          <img :src="item.imgUrl.banner" />
+          <img :src="item.image_path" />
           <p>特价</p>
         </div>
         <div class="grab-list-item-name hidden">
-          {{ item.title }}
+          {{ item.name }}
         </div>
         <div class="grab-list-item-price">
           <div class="price">
             ￥
-            <h2>{{ item.price }}</h2>
+            <h2>{{ item.float_minimum_order_amount }}</h2>
           </div>
           <div class="grab-list-item-icon">抢</div>
         </div>
@@ -117,6 +117,7 @@ export default {
         margin: auto;
       }
       .grab-list-item-price {
+        padding-top: 0.4rem;
         display: flex;
         justify-content: space-between;
         .price {
@@ -125,7 +126,8 @@ export default {
           line-height: var(--normalHeight);
           text-align: center;
           h2 {
-            font-size: var(--titleSize);
+            font-size: var(--bigSize);
+            padding-right: 0.8rem;
             font-weight: 700;
           }
         }
@@ -134,10 +136,10 @@ export default {
         background-color: var(--redSize);
         position: relative;
         padding-top: var(--normal);
-        width: var(--titleSize);
+        width: var(--bigSize);
         border-bottom-right-radius: var(--normal);
         border-top-left-radius: var(--normal);
-        font-size: var(--bigSize);
+        font-size: var(--side);
         padding: 0 var(--normal);
         line-height: var(--normalHeight);
         text-align: center;

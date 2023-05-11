@@ -72,15 +72,83 @@
         </div>
       </div>
     </div>
+    <FooterGuide />
   </div>
 </template>
 <script>
+import { v4 as uuidv4 } from "uuid";
+import FooterGuide from "@/components/FooterGuide/FooterGuide/FooterGuide.vue";
 export default {
   data() {
     return {
-      orderLists: [],
+      orderLists: [
+        {
+          id: uuidv4(),
+          title: "舌尖上的中国",
+          name: "",
+          bannerUrl:
+            "./userShop/shop1/banner/O1CN018s3S9U1uS54nlSdlq_!!2215475886035-2-koubei.png_100x100.png",
+          imgUrl: [
+            "./userShop/shop1/Snipaste_2023-04-27_16-14-15.jpg",
+            "./userShop/shop1/Snipaste_2023-04-27_16-14-48.jpg",
+            "./userShop/shop1/Snipaste_2023-04-27_16-14-56.jpg",
+          ],
+          price: 8.7,
+          num: 3,
+        },
+        {
+          id: uuidv4(),
+          title: "蜜雪冰城(中坝)",
+          name: "",
+          bannerUrl:
+            "./userShop/shop2/banner/O1CN01RYQNPz1SZaKgHmuOA_!!2208374492261-0-koubei.jpg_100x100.jpg",
+          imgUrl: [
+            "./userShop/shop2/Snipaste_2023-04-27_16-17-28.jpg",
+            "./userShop/shop2/Snipaste_2023-04-27_16-17-49.jpg",
+            "./userShop/shop2/Snipaste_2023-04-27_16-17-56.jpg",
+          ],
+          price: 16.9,
+          num: 3,
+        },
+        {
+          id: uuidv4(),
+          title: "理柏颜营养健康旗舰店(长春店)",
+          name: "褪黑素",
+          bannerUrl:
+            "./userShop/shop3/banner/O1CN01xp2QGT1a355PE94XN_!!2214259033273-0-koubei.jpg_100x100.jpg",
+          imgUrl: ["./userShop/shop3/Snipaste_2023-04-27_16-19-11.jpg"],
+          price: 9.9,
+          num: 1,
+        },
+        {
+          id: uuidv4(),
+          title: "一点点(石人南路店)",
+          name: "",
+          bannerUrl:
+            "./userShop/shop4/banner/O1CN01JYWzfq2GiUoyTXkDZ_!!2206679119049-0-koubei.jpg_100x100.jpg",
+          imgUrl: [
+            "./userShop/shop4/Snipaste_2023-04-27_16-22-03.jpg",
+            "./userShop/shop4/Snipaste_2023-04-27_16-22-14.jpg",
+          ],
+          price: 24.9,
+          num: 3,
+        },
+        {
+          id: uuidv4(),
+          title: "叫了只炸鸡(中坝)",
+          name: "第二份半价脆鸡骨套餐",
+          bannerUrl:
+            "./userShop/shop5/banner/O1CN0107bS0Z1CqxIjrR01C_!!2208334220133-0-koubei.jpg_100x100.jpg",
+          imgUrl: ["./userShop/shop5/Snipaste_2023-04-27_16-23-28.jpg"],
+          price: 28,
+          num: 1,
+        },
+      ],
       active: 1,
     };
+  },
+  components: {
+    FooterGuide,
   },
   methods: {
     handerClick(id) {
@@ -88,9 +156,9 @@ export default {
     },
   },
   created() {
-    this.$axios.get("/home/order").then((res) => {
+    /* this.$axios.get("/home/order").then((res) => {
       this.orderLists = res.data;
-    });
+    }); */
   },
 };
 </script>
@@ -102,6 +170,7 @@ export default {
   .nav {
     width: 95%;
     display: flex;
+    padding: 1rem 0;
     margin: auto;
     .navItem {
       flex: 6;
